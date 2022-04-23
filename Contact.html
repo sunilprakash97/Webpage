@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 1</title>
+  <link rel="stylesheet" href="Style.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="Frame">
+      <nav>
+          <a href="Index.html"><img src ="Images/Logo.png"></a>
+          <div class="nav-links" id="navLinks">
+            <!-- close icon -->
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+              <li><a href="Index.html">HOME</a></li>
+              <li><a href="Blog.html">BLOG</a></li>
+              <li><a href="Resume.html">RESUME</a></li>
+              <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <!-- menu icon -->
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+    </section>
+<!-- _________________________________________________ -->
+<!-- _________________________________________________ -->
+
+<section class="Resume">
+  <div class="row">
+
+    <div class="Resume-col">
+      <div class="container">
+        <form action="action_page.php">
+
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" name="fullname" placeholder="Your Name: ">
+
+          <label for="lname">Email Address</label>
+          <input type="text" id="emailID" name="email" placeholder="Your Email Address: ">
+
+          <label for="Enquiry">Enquiry</label>
+            <select id="enquiry" name="enquiry">
+              <option value="General">General</option>
+              <option value="Sponsorship">Sponsorship</option>
+              <option value="Appointment">Appointment</option>
+            </select>
+
+          <label for="About-us">How Did You Hear About Us?<br></label>
+          <form>
+            <input type="radio" id="About-us-1" name="About-us" value="social-media">
+            <label for="social-media">Social Media</label><br>
+
+            <input type="radio" id="About-us-2" name="About-us" value="peer-referral">
+            <label for="peer-referral">Peer Referral</label><br>
+
+            <input type="radio" id="About-us-3" name="About-us" value="google-search-engine">
+            <label for="google-search-engine">Google Search Engine</label><br>
+
+            <input type="radio" id="About-us-4" name="About-us" value="third-party-review">
+            <label for="third-party-review">Third Party Review</label>
+          </form>
+
+          <label for="subject"><br>Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write your Message here..." style="height:200px"></textarea>
+
+          <input type="submit" value="Submit">
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- _________________________________________________ -->
+<!-- _________________________________________________ -->
+
+<!-- Java Script -->
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right="0";
+  }
+  function hideMenu(){
+    navLinks.style.right="-200px";
+  }
+</script>
+
+
+</body>
+</html>

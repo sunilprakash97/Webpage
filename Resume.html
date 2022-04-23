@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 1</title>
+  <link rel="stylesheet" href="Style.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=PT+Serif&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="Frame">
+      <nav>
+          <a href="Index.html"><img src ="Images/Logo.png"></a>
+          <div class="nav-links" id="navLinks">
+            <!-- close icon -->
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="Index.html">HOME</a></li>
+              <li><a href="Blog.html">BLOG</a></li>
+              <li><a href="Resume.html">RESUME</a></li>
+              <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <!-- menu icon -->
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+    </section>
+
+<!-- _________________________________________________ -->
+<!-- _________________________________________________ -->
+
+<section class="Resume">
+  <div class="row">
+    <div class="Resume-col">
+      <h3>Overview</h3>
+        <p>I'm a Master's student at McMaster University. I've been passionate about coding and enjoy experiencing and learning new things along with the journey. I consider myself an open-minded, responsible, and committed person both in work and life.</p>
+    </div>
+  </div>
+</section>
+
+<!-- _________________________________________________ -->
+<!-- _________________________________________________ -->
+
+<section class="Resume-layer">
+  <div class="row">
+
+    <div class="Resume-layer-col">
+      <h3>Academics</h3>
+        <h4>MEng - Systems & Technology<br>
+            McMaster University</h4>
+        <h6>09/2021 - Present</h6>
+        <p> </p>
+        <h4>B.Tech - Computer Science and Engineering<br>
+            SRM Institute of Science and Technology</h4>
+        <h6>07/2015 - 05/2019</h6>
+        <p> </p>
+    </div>
+
+   <div class="Resume-layer-col">
+      <h3>Career</h3>
+            <h4>Operations Engineer<br>
+                Toptech Systems Pvt. Ltd</h4>
+            <h6>01/2020 - 07/2021</h6>
+            <p> </p>
+            <h4>IT Technician<br>
+                Artspace 24 Pvt. Ltd</h4>
+            <h6>06/2019 - 12/2019,</h6>
+            <p> </p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- _________________________________________________ -->
+<!-- _________________________________________________ -->
+
+<section class="Resume-layer">
+  <div class="row">
+
+    <div class="Resume-layer-col">
+      <h3>Skills</h3>
+        <div class="row">
+          <ul>
+            <li><a href="">Data Structure and Algorithms</a></li>
+            <li><a href="">Object Oriented Programming</a></li>
+            <li><a href="">Programming Languages</a></li>
+            <li><a href=""> - Java, Python, JavaScript</a></li>
+            <li><a href="">Databases - MySQL</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Project Management</a></li>
+            <li><a href=""> - Scrum, Agile, Waterfall</a></li>
+            <li><a href="">Machine Learning Algorithms</a></li>
+            <li><a href="">Deep Learning Algorithms</a></li>
+          </ul>
+        </div>
+    </div>
+
+    <div class="Resume-layer-col">
+      <h3>Extracurricular</h3>
+        <p>Violin Player<br>
+            World Traveller<br>
+            F1 Enthusiast<br>
+            Ice Skater</p>
+    </div>
+
+</section>
+<!-- _________________________________________________ -->
+<!-- _________________________________________________ -->
+<!-- Java Script -->
+<script>
+  var navLinks = document.getElementById("navLinks");
+  function showMenu(){
+    navLinks.style.right="0";
+  }
+  function hideMenu(){
+    navLinks.style.right="-200px";
+  }
+</script>
+</body>
+</html>
+
+
+
